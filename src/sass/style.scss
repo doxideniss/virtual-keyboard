@@ -1,0 +1,74 @@
+@import "~normalize.css";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.field {
+  width: 100%;
+  padding: 20px 0;
+}
+.field__item {
+  width: 100%;
+  height: 20vh;
+  resize: none;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #2fb3d4;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.keyboard__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.key {
+  cursor: pointer;
+  padding: 10px 25px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #1b7287;
+  color: #fff;
+  transition: background-color 0.1s ease-in-out;
+  user-select: none;
+  &:hover {
+    background-color: #1165bf;
+  }
+}
+.key.key_active {
+  background-color: #1b5c87;
+}
+
+.space {
+  width: 300px;
+}
+
+.shift {
+  width: 65px;
+}
